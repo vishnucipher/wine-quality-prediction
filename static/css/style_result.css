@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('/static/images/win.jpg');
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+#predictionResult {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#predictionText,
+#confidenceText {
+    font-size: 18px;
+    color: #f6f0f0;
+}
+
+#predictedQuality,
+#confidenceValue {
+    font-weight: bold;
+    color: #8B0000;
+}

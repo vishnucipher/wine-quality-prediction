@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style_index.css">
+    <title>Wine Prediction</title>
+
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="{{ url_for('about') }}">About Project</a></li>
+
+            <li><a href="{{ url_for('result') }}">Result Page</a></li>
+            <li><a href="https://github.com/vishnucipher/whatsapp-chat-analysis/blob/master/Images/img1.png">Jupyter Notebook</a></li>
+
+            <li><a>   </a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="container">
+        <h1>Wine Prediction</h1>
+        <p>Enter details below to get wine predictions:</p> 
+        <form class="form" action="{{url_for('submit')}}" method="POST">
+                  <div class="first_field">
+                    <label  class="opt_lab"    for="fname1">Type Of Wine:</label>
+                    <!-- <input type="text" id="fname1" name="fname1" required> -->
+                    <select  class="select"  id="fname1" name="fname1">
+                        <option value=1>White</option>
+                        <option value=0>Red</option>
+                        
+                      </select>
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        
+                   <div class="second_field2">
+                    <label for="fname2">Fixed Acidity:</label>
+                    <input type="text" id="fname2" name="fname2" required placeholder="Between 3-16">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <div class="second_field2">
+                    <label for="fname3">Volatile Acidity:</label>
+                    <input type="text" id="fname3" name="fname3" required placeholder="Between 0-2">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <div class="second_field2">
+                    <label for="fname4">Citric Acid:</label>
+                    <input type="text" id="fname4" name="fname4" required  placeholder="Between 0-2">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <div class="second_field2">
+                    <label for="fname5">Residual Sugar:</label>
+                    <input type="text" id="fname5" name="fname5" required placeholder="Between 0-65">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <div class="second_field2">
+                    <label for="fname6">Chlorides:</label>
+                    <input type="text" id="fname6" name="fname6" required placeholder="Between 0-0.6">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <div class="second_field2">
+                    <label for="fname7">Free Sulfur Dioxide:</label>
+                    <input type="text" id="fname7" name="fname7" required placeholder="Between 1-290">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <div class="second_field2">
+                    <label for="fname8">Total Sulfur Dioxide:</label>
+                    <input type="text" id="fname8" name="fname8" required placeholder="Between 5-450">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <div class="second_field2">
+                    <label for="fname9">Density:</label>
+                    <input type="text" id="fname9" name="fname9" required placeholder="Between 0-2" >
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <div class="second_field2">
+                    <label for="fname10">PH_value:</label>
+                    <input type="text" id="fname10" name="fname10" required placeholder="Between 2-4">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <div class="second_field2">
+                    <label for="fname11">Sulphates:</label>
+                    <input type="text" id="fname11" name="fname11" required placeholder="Between 0-2">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <div class="second_field2">
+                    <label for="fname12">Alcohol:</label>
+                    <input type="text" id="fname12" name="fname12" required placeholder="Between 5-15">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+            <button type="submit">Predict</button>
+            
+        </form>
+    </div>
+</body>
+</html>

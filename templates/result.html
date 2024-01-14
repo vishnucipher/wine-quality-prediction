@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style_result.css">
+    <title>Wine Quality Prediction Result</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Wine Quality Prediction Result</h1>
+
+        <div id="predictionResult">
+            <!-- Display prediction result here -->
+            <p id="predictionText">The predicted quality of the wine is: <span id="predictedQuality"></span></p>
+           
+            <p id="confidenceText">Confidence: <span id="confidenceValue"></span></p>
+            <h2 style="color: white;"> {{ result }}</h2>
+        </div>
+
+        <a href="index.html">Go Back</a>
+    </div>
+</body>
+</html>
